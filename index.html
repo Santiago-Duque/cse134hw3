@@ -5,7 +5,10 @@
         <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
         <title>Santiago Duque</title>
         <link rel = "icon" href = "favicon.ico">
-
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
         <style>
             table {
                 border: 1px solid black;
@@ -29,117 +32,46 @@
                 </form>
             </dialog>
             <h1>Santiago Duque</h1>
-            <h3>Software Engineer</h3>
             <nav>
                 <ul>
+                    <li><a href = "#home">Home</a></li>
                     <li><a href = "#aboutme">About Me</a></li>
                     <li><a href = "#projects">Projects</a></li>
-                    <li><a href = "#experiences">Experiences</a></li>
-                    <li><a href = "#miscellaneous">Miscellaneous</a></li>
                     <li><a href = "#contact">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+            <section id = "home">
+                <h2>Santiago Duque</h2>
+                <p>Software Engineer | Computer Science Student at UCSD</p>
+            </section>
+
             <section id = "aboutme">
-                <h2>About Me</h2>
+                <!--<h2 id = "abtmeh2">About Me</h2>-->
                 <picture>
-                    <source srcset = "picofme.png" type = "image/png">
-                    <img src = "otherpicofme.png" alt = "other picture of Me">
+                    <img src = "Picofme.png" alt = "Picture of Me">
                 </picture>
-                <p>Hello there! I am <strong>Santiago Duque</strong>, a motivated computer science student studying at the University of California San Diego.</p>
-                    <pre>During my free time, I like <em>gaming</em>, going to <abbr title ="BLACKPINK">concerts/festivals</abbr>, and going to amusement parks!</pre>       
-                <aside>
-                    <details>
-                        <summary>Fun Facts</summary>
-                        <p>I saw LISA from Blackpink perform an <b>unreleased song</b> in New York!</p>
-                        <p>Pressing <kbd>Ctrl</kbd> + <kbd>a</kbd> will highlight all page content!</p>
-                    </details>
-                </aside>
-                <blockquote cite = "https://medium.com/@jdharvey/life-lesson-1-treat-others-how-you-want-to-be-treated-3ba672963237"><i>"Treat others the way you want to be treated."</i><cite>- (Matthew 7:12)</cite></blockquote>
+                <p id = "me">Hello there! I am <strong>Santiago Duque</strong>, a motivated computer science student studying at the University of California San Diego. During my free time, I like <em>gaming</em>, going to <abbr title ="BLACKPINK">concerts/festivals</abbr>, and going to amusement parks!</p> 
                 <hr>
             </section>
 
             <section id = "projects">
                 <h2>Projects</h2>
-                <table>
-                    <caption>A Couple of Projects I've Worked On</caption>
-                    <colgroup>
-                        <col span = "3">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>Projects</th>
-                            <th>Languages Used</th>
-                            <th>Link To Projects</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Developer Journal</th>
-                            <td><code>HTML, CSS, Javascript</code></td>
-                            <td><a href = "https://cse110-sp24-group26.github.io/final-project/">https://cse110-sp24-group26.github.io/final-project/</a></td>
-                        </tr>
-                        <tr>
-                            <th>File Compression/Decompression</th>
-                            <td><code>C++</code></td>
-                            <td>link</td>
-                        </tr>
-                        <tr>
-                            <th>Brooklyn Property Price Predictors</th>
-                            <td><code>Python</code></td>
-                            <td><a href = "https://github.com/COGS108/Group044_WI24/blob/master/FinalProject_Group044_WI24.ipynb">https://github.com/COGS108/Group044_WI24/blob/master/FinalProject_Group044_WI24.ipynb</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>Skills used in these projects: </p>
+                <p>A couple of projects I've worked on: </p>
                 <dl>
                     <dt>Developer Journal:</dt>
                     <dd>Teamwork, Multi-Language Programming, Full-Stack Development</dd>
+                    <dd>Project Link: <a href = "https://cse110-sp24-group26.github.io/final-project/">https://cse110-sp24-group26.github.io/final-project/</a></dd>
 
                     <dt>File Compression/Decompression: </dt>
                     <dd>Data Structures & Algorithms, C++ (Used <dfn>Stacks</dfn>: LIFO DS, Vectors, and Priority Queues)</dd>
 
                     <dt>Brooklyn Property Price Predictors: </dt>
                     <dd>Python, Python Libraries, Teamwork</dd>
+                    <dd>Project Link: <a href = "https://github.com/COGS108/Group044_WI24/blob/master/FinalProject_Group044_WI24.ipynb">https://github.com/COGS108/Group044_WI24/blob/master/FinalProject_Group044_WI24.ipynb</a></dd>
                 </dl>
-                <p>Check out my github page for more!: </p>
-                <iframe src = "https://github.com/Santiago-Duque"></iframe>
                 <hr>
-            </section>
-
-            <section id = "miscellaneous">
-                <h2>Miscellaneous</h2>
-                <figure>
-                    <figcaption>Current Favorite Song: I LUV IT - PSY</figcaption>
-                    <audio controls src = "iluvitpsy.mp3"></audio>
-                </figure>
-                <p>Check out the full song!: </p>
-                <video width = "250" controls>
-                    <source src = "iluvitpsy.mp4" type = "video/mp4">
-                </video><br>
-                <label for = "travel">I love traveling! Here are some places I've been to:</label>
-                <select id = "travel">
-                    <optgroup label = "Inside the U.S.">
-                        <option>Miami</option>
-                        <option>New York</option>
-                        <option>San Francisco</option>
-                        <option>Las Vegas</option>
-                        <option>Grand Canyon</option>
-                    </optgroup>
-                    <optgroup label = "Outside the U.S.">
-                        <option>Medellin</option>
-                        <option>Tijuana</option>
-                    </optgroup>
-                </select>
-                <p>These are some games I like to play: </p>
-                <ol>
-                    <li>Valorant</li>
-                    <li>Marvel Rivals</li>
-                    <li>Dead By Daylight</li>
-                    <li>Fortnite</li>
-                </ol>
-                <p>Extra credit #2: Developers couldn't make use of MathML until recently since MathML only worked on newer browser versions. </p>
             </section>
 
             <section id = "contact">
@@ -155,15 +87,15 @@
                         <input type = "text" id = "userName" name = "User Name"><br/>
                         <label for = "email">Email: </label>
                         <input type = "text" id = "email" name = "User email"><br/>
-                        <label for = "msg">Message: </label><br/>
-                        <textarea id = "msg" name = "msg" rows = "8" cols = "27"></textarea>
+                        <!--<label for = "msg">Message: </label><br/>-->
+                        <!--<textarea id = "msg" name = "msg" rows = "8" cols = "27"></textarea>-->
                         <button>Send</button>
                     </fieldset>
                 </form>
             </section>
         </main>
         <footer>
-            <p> Santiago created this website using <del>Python</del> <ins>HTML!</ins></p>
+            <p> Santiago created this website using <del>Python</del> <ins>HTML</ins> and CSS!</p>
         </footer>
         <noscript>Your browser does not support JavaScript!</noscript>
     </body>
